@@ -1,0 +1,68 @@
+[
+	{ 
+		"op": "add", 
+		"path": "/planetTypes/pristine", 
+		"value": {
+			"threatRange": [1, 1],
+			"layers": {
+				"surface": {
+					"primaryRegion": ["pristine"],
+					"secondaryRegions": ["pristineforest"],
+					"dungeons": 
+					[
+						[1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"], [1.0, "glitchvillage"]
+					]
+				},
+				"subsurface": {
+					"primaryRegion": ["pristineunderground"],
+					"secondaryRegions": []
+				},
+				"underground1": {
+					"primaryRegion": ["pristineunderground"],
+					"secondaryRegions": []
+				},
+				"underground2": {
+					"primaryRegion": ["pristineunderground"],
+					"secondaryRegions": []
+				},
+				"underground3": {
+					"primaryRegion": ["pristineunderground"],
+					"secondaryRegions": []
+				}
+			}
+		}
+	},
+	{ 
+		"op": "add",
+		"path": "/regionTypes/pristine",
+		"value": {
+			"caveLiquid": ["water"],
+			"blockSelector": ["remixedMildSurface"],
+			"fgCaveSelector": ["surfaceCaves"],
+			"bgCaveSelector": ["empty"],
+			"biome": [[0, ["pristine"]]],
+			"subRegion": []
+		}
+	},
+	{ 
+		"op": "add",
+		"path": "/regionTypes/pristineforest",
+		"value": {
+			"caveLiquid": ["water"],
+			"blockSelector": ["remixedMildSurface"],
+			"fgCaveSelector": ["surfaceCaves"],
+			"bgCaveSelector": ["empty"],
+			"biome": [[0, ["pristineforest"]]],
+			"subRegion": []  
+		}
+	},
+	{ 
+		"op": "add",
+		"path": "/regionTypes/pristineunderground",
+		"value": {
+			"fgCaveSelector": ["empty"],
+			"caveLiquid": [],
+			"biome": [[0, ["pristineunderground"]]]
+		}
+	}
+]

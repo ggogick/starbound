@@ -1,0 +1,57 @@
+{
+	"objectName": "lemirrigator",
+	"colonyTags": ["lemuria"],
+	"rarity": "Common",
+	"description": "A weird, hacked together irrigation platform.",
+	"shortdescription": "Big Freakin Irrigator",
+	"race": "generic",
+
+	"apexDescription": "Crude, perhaps, but effective.",
+	"avianDescription": "This platform looks unstable.",
+	"floranDescription": "Water fall down and go boom.",
+	"glitchDescription": "Scanning. This flooring may collapse.",
+	"humanDescription": "Who needs pipes anyway?",
+	"hylotlDescription": "Something about the way this is crafted is odd.",
+	"novakidDescription": "This appears to be some sort of farming machinery.",
+
+	"category": "door",
+	"price": 100,
+	"inventoryIcon": "lemirrigatoricon.png",
+  
+	"orientations": [
+		{
+			"image": "lemirrigator.png:default",
+			"imagePosition": [-17, -1],
+			"animationPosition": [-17, -1],
+			"flipImages": true,
+			"direction": "left",
+			"spaceScan": 0.1,
+			"anchors": ["background"]
+		},
+		{
+			"image": "lemirrigator.png:default",
+			"imagePosition": [-17, -1],
+			"animationPosition": [-17, -1],
+			"direction": "right",
+			"spaceScan": 0.1,
+			"anchors": ["background"]
+		}
+	],
+
+	"animation": "/objects/wired/door/door.animation",
+	"animationCustom": {
+		"sounds": {
+			"open": ["/sfx/objects/stonedoor_open_fast.wav"],
+			"close": ["/sfx/objects/stonedoor_close_fast.wav"]
+		}
+	},
+	"animationParts": {
+		"door": "lemirrigator.png"
+	},
+
+	"scripts": ["/objects/wired/door/door.lua"],
+	"scriptDelta": 5,
+
+	"inputNodes": [[-2, 0]],
+	"outputNodes": [[2, 0]]
+}

@@ -1,0 +1,49 @@
+{
+	"objectName": "lemgeoscreen",
+	"colonyTags": ["lemuria"],
+	"rarity": "Common",
+	"description": "Numbers dance and scroll on the screen. What do they mean?",
+	"shortdescription": "Lemuria Geo Screen",
+	"race": "generic",
+
+	"apexDescription": "A monitor. The information makes no sense to me.",
+	"avianDescription": "A monitor, filled with arcane data.",
+	"floranDescription": "Floran read words good. Sssay 'ssstab a meatman'. Huh.",
+	"glitchDescription": "Analysis. This display appears to read 'stab a meatman' in binary. How unusual.",
+	"humanDescription": "This reminds me of that one old movie. I can't remember the name of it.",
+	"hylotlDescription": "Meaningless data.",
+	"novakidDescription": "A display of real-time analytical data.",
+
+	"category": "decorative",
+	"price": 100,
+	"inventoryIcon": "lemgeoscreenicon.png",
+
+	"lightColor": [147, 195, 200],
+	"flickerPeriod": 0.4,
+	"flickerMinIntensity": 0.775,
+	"flickerMaxIntensity": 0.8,
+	"flickerPeriodVariance": 0.075,
+	"flickerIntensityVariance": 0.0,
+
+	"orientations" : [
+		{
+			"image": "lemgeoscreen.png:<color>.<frame>",
+			"imagePosition" : [-16, 0],
+			"direction": "right",
+			"spaceScan": 0.1,
+			"anchors": ["background"]
+		}
+	],
+
+	"animation": "lemgeoscreen.animation",
+	"animationParts": {
+		"bg": "lemgeoscreen.png",
+		"fg": "lemgeoscreenlit.png"
+	},
+	"animationPosition": [-16, 0],
+
+	"scripts": ["/objects/wired/light/light.lua"],
+	"scriptDelta": 60,
+
+	"inputNodes": [[0, 0]]
+}

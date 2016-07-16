@@ -1,0 +1,14 @@
+[
+	{ 
+		"op": "add", 
+		"path": "/pristine",
+		"value": [
+			[0.6, "clear"],
+			[0.1, "glowingrain"],
+			[0.05, "rain"],
+			[0.05, "storm"],
+			[0.1, "drizzle"],
+			[0.1, "snow"]  
+		]	
+	}
+]

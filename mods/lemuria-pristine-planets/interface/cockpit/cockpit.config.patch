@@ -1,0 +1,11 @@
+[
+	{ 
+		"op": "add",
+		"path": "/planetTypeToDescription/pristine",
+		"value": [
+			"A ^#49e193;pristine^white; world with abundant flora.  Perfect for settlement.",
+			"Readings indicate a ^#49e193;pristine^white; world, suitable for colonization.",
+			"This planet is covered in ^#49e193;pristine^white; terrain, and would be perfect for construction."
+		]
+	}
+]

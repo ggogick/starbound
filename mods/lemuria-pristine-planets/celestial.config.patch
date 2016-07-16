@@ -1,0 +1,84 @@
+[
+	{ 
+		"op": "add",
+		"path": "/terrestrialHorizonGraphics/pristine",
+		"value": {
+			"baseImages": "/celestial/system/terrestrial/horizon/textures/garden_<selector>.png",
+			"maskTextures": "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+			"maskRange": [1, 25],
+			"maskPerPlanetRange": [3, 3]
+		}
+	},
+	{ 
+		"op": "add",
+		"path": "/terrestrialGraphics/pristine",
+		"value": {
+			"baseImages": "/celestial/system/terrestrial/biomes/garden/maskie<num>.png",
+			"dynamicsImages": "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+			"dynamicsRange": [1, 30],
+			"baseCount": 5
+		}
+	},
+	{ 
+		"op": "add",
+		"path": "/planetaryTypes/Pristine",
+		"value": {
+			"satelliteProbability": 0.0,
+			"baseParameters": {
+				"worldType": "Terrestrial",
+				"description": "Pristine Planet",
+				"smallImage": "/celestial/system/planet_small.png",
+				"terrestrialType": ["pristine"]
+			},
+			"variationParameters": [
+				{
+					"imageScale": 0.075,
+					"smallImageScale": 0.4,
+					"worldSize": "small"
+				},
+				{
+					"imageScale": 0.1,
+					"smallImageScale": 0.5,
+					"worldSize": "medium"
+				},
+				{
+					"imageScale": 0.15,
+					"smallImageScale": 0.6,
+					"worldSize": "large"
+				}
+			]
+		}
+	},
+	{ 
+		"op": "replace",
+		"path": "/systemTypes/Orange/orbitRegions/0/planetaryTypes/2",
+		"value": { 
+			"weight": 0.05, 
+			"item": "Pristine" 
+		}
+	},
+	{ 
+		"op": "replace",
+		"path": "/systemTypes/Orange/orbitRegions/1/planetaryTypes/1",
+		"value": { 
+			"weight": 0.05, 
+			"item": "Pristine" 
+		}
+	},
+	{ 
+		"op": "replace",
+		"path": "/systemTypes/Orange/orbitRegions/2/planetaryTypes/2",
+		"value": { 
+			"weight": 0.05, 
+			"item": "Pristine" 
+		}
+	},
+	{ 
+		"op": "replace",
+		"path": "/systemTypes/Orange/orbitRegions/3/planetaryTypes/2",
+		"value": { 
+			"weight": 0.1, 
+			"item": "Pristine" 
+		}
+	}
+]
